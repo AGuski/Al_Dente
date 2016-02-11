@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/timer_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true" />
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/donut_progress"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_centerInParent="true"
+        custom:donut_finished_color="#007aff37"
+        custom:donut_unfinished_color="#007aff37"
+        custom:donut_text_color="#00000000"
+        custom:donut_unfinished_stroke_width="120dp"
+        custom:donut_finished_stroke_width="120dp"
+        custom:donut_text_size="0dp"
+        custom:donut_progress="0"/>
+
+    <TextView style="?android:textAppearanceMedium"
+        android:id="@+id/timer_text"
+        android:padding="16dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/timer_image"
+        android:text="@string/timer_text" />
+</RelativeLayout>

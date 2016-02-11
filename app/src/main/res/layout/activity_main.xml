@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7aff37">
+
+    <com.alex.aldente.VerticalViewPager
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vertical_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.alex.aldente.VerticalViewPager>
+
+</RelativeLayout>
